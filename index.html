@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Neon Maze</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="maze-canvas"></canvas>
+        
+        <div id="ui-layer">
+            <div id="start-screen" class="screen active">
+                <h1>Neon Maze</h1>
+                <p>Swipe or use arrow keys to reach the goal.</p>
+                <div class="difficulty-selector">
+                    <button class="diff-btn" data-size="10">Easy</button>
+                    <button class="diff-btn active" data-size="15">Medium</button>
+                    <button class="diff-btn" data-size="20">Hard</button>
+                </div>
+                <button id="start-btn" class="primary-btn">Start Game</button>
+            </div>
+            
+            <div id="win-screen" class="screen">
+                <h2>Level Complete!</h2>
+                <p>You found your way out.</p>
+                <button id="next-btn" class="primary-btn">Next Level</button>
+            </div>
+        </div>
+
+        <div id="controls-hint">Swipe to move</div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
